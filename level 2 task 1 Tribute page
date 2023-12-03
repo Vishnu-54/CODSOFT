@@ -1,0 +1,186 @@
+#html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page - Nick Vujicic</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Nick Vujicic</h1>
+    </header>
+    <section class="intro-section">
+        <div class="image-container">
+            <img src="data:image/jpg;base64,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"
+                alt="Nick Vujicic" width="400">
+        </div>
+        <div class="text-container">
+            <h2>About Nick Vujicic</h2>
+            <p>
+                Nick Vujicic is a motivational speaker, author, and evangelist known for his inspiring life story. Born on December 4, 1982, in Melbourne, Australia, Nick was born with tetra-amelia syndrome, a rare disorder characterized by the absence of all four limbs.
+            </p>
+            <p>
+                Despite facing significant physical challenges, Nick has overcome adversity with a positive attitude. He travels the world sharing his story and encouraging people to embrace life with hope and determination.
+            </p>
+        </div>
+    </section>
+    <section class="qualities-section">
+        <h2>Inspirational Qualities</h2>
+        <div class="qualities-container">
+            <div class="quality">
+                <ion-icon name="bulb-outline"></ion-icon>
+                <h3>Resilience and Determination</h3>
+                <p>
+                    Nick's life is a testament to resilience and determination. He has faced and conquered challenges, demonstrating that one's attitude and mindset can overcome physical limitations.
+                </p>
+            </div>
+            <div class="quality">
+                <ion-icon name="megaphone-outline"></ion-icon>
+                <h3>Motivational Speaker</h3>
+                <p>
+                    Nick is a powerful and motivational speaker. His talks inspire individuals to overcome obstacles, embrace their uniqueness, and live a life filled with purpose and positivity.
+                </p>
+            </div>
+            <div class="quality">
+                <ion-icon name="person-outline"></ion-icon>
+                <h3>Empathy and Compassion</h3>
+                <p>
+                    Nick embodies empathy and compassion, spreading a message of love and acceptance. He encourages people to treat others with kindness and understanding, regardless of their differences.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="inspiration-section">
+        <h2>Impactful Messages</h2>
+        <div class="quote-container">
+            <p>
+                "No matter who you are, no matter what you're going through, God knows it. He is with you. He is going to pull you through."
+            </p>
+        </div>
+        <div class="paragraph">
+            <p>
+                Nick Vujicic's words resonate with people facing challenges. His message emphasizes faith, resilience, and the belief that everyone has value and purpose. Nick's positive outlook on life continues to inspire individuals to overcome difficulties and find
+                strength in their faith and inner resilience.
+            </p>
+            <p>
+                Through his motivational speeches and books, Nick encourages people to focus on what they can do rather than what they cannot. His story is a source of inspiration for those seeking hope and motivation to overcome adversity.
+            </p>
+        </div>
+    </section>
+    <footer>
+        <p>Celebrating the inspirational life and messages of Nick Vujicic.</p>
+    </footer>
+</body>
+
+</html>
+#css
+**********************************************
+::-webkit-scrollbar {
+    width: 0;
+    display: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(to bottom right, #fbbf24, #ec4899);
+}
+
+header {
+    background-color: #333333;
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.text-container {
+    max-width: 500px;
+    margin-left: 50px;
+    color: #333333;
+}
+
+.qualities-section {
+    background: linear-gradient(to bottom right, #ffffff, #f1f1f1);
+    padding: 50px;
+    text-align: center;
+}
+
+.qualities-container {
+    display: grid;
+    gap: 30px;
+    max-width: 900px;
+    margin: 40px auto;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.quality {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 15px 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    text-justify: auto;
+    cursor: pointer;
+}
+
+.quality:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.quality ion-icon {
+    font-size: 30px;
+    color: #333333;
+}
+
+.inspiration-section {
+    background: linear-gradient(to bottom right, #fbbf24, #ec4899);
+    padding: 50px;
+    text-align: center;
+}
+
+.quote-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.quote-container p {
+    font-style: italic;
+    color: #1e293b;
+}
+
+.paragraph {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.inspiration-section p {
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #333333;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
